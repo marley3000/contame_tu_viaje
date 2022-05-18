@@ -35,8 +35,8 @@ const Home = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-between mb-4 sm:flex-row sm:justify-evenly">
-        <Link to="/UploadTravel"><button className="p-2 m-2 text-xs text-white border rounded-lg hover:font-semibold bg-violet-800 border-violet-400 hover:text-black hover:bg-violet-400 hover:border-violet-800 sm:text-base">Compartir una experiencia</button></Link>
-        <Link to="/FindCountry"><button className="p-2 m-2 text-xs text-white border rounded-lg hover:font-semibold bg-rose-800 border-rose-400 hover:text-black hover:bg-rose-400 hover:border-rose-800 sm:text-base">Buscar un destino</button></Link>
+        <Link to="/UploadTravel"><button className="p-2 m-2 text-xs text-white border rounded-lg hover:font-semibold bg-violet-800 border-violet-400 hover:text-black hover:bg-violet-400 hover:border-violet-800 hover:-translate-y-1 hover:-translate-x-1 hover:shadow-md hover:shadow-black sm:text-base">Compartir una experiencia</button></Link>
+        <Link to="/FindCountry"><button className="p-2 m-2 text-xs text-white border rounded-lg hover:font-semibold bg-rose-800 border-rose-400 hover:text-black hover:bg-rose-400 hover:border-rose-800 hover:-translate-y-1 hover:-translate-x-1 hover:shadow-md hover:shadow-black sm:text-base">Buscar un destino</button></Link>
       </div>
       <p className="mt-4 text-sm text-center">Por favor tener en cuenta que la información aquí compartida es sólo de carácter indicativo y corresponde a testimonios y experiencias particulares de distintos usuarios.</p>
     </div>
