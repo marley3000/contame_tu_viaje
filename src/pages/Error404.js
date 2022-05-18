@@ -2,7 +2,7 @@
 
 const Error404 = () => {
     return (
-      <div className="flex h-screen flex-col items-center bg-gradient-to-r from-indigo-100 to-yellow-100">
+      <div className="flex flex-col items-center">
           <div className="text-sm m-12 font-semibold text-center text-red-700 sm:text-xl font-kanit">
             <p><span className="text-md sm:text-3xl">Ooops..</span><br/> La página seleccionada fue modificada o todavía no ha sido creada. Pero no te preocupes, podés volver a nuestra página principal con sólo un click.</p>
           </div>

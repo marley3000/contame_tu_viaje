@@ -7,7 +7,7 @@ import landscape03 from '../images/landscape03.jpg';
 
 const Home = () => {
   return (
-    <div className="flex flex-col h-screen bg-gradient-to-r from-indigo-100 to-yellow-100 font-kanit">
+    <div className="flex flex-col font-kanit">
       <p className="px-6 py-6 text-base font-semibold text-center text-blue-900 sm:text-lg">Este es un sitio colaborativo en el cual podrás encontrar experiencias y opiniones sobre distintos destinos turísticos. <br/> Envíanos tus propias experiencias para que otros usuarios puedan conocer destinos potenciales y tomar la mejor decisión posible para su próximo viaje!</p>
       <div id="carouselExampleSlidesOnly" className="relative w-2/6 pb-8 left-1/3 carousel slide" data-bs-ride="carousel">
         <div className="relative overflow-hidden border rounded-2xl carousel-inner">
