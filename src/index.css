@@ -5,3 +5,33 @@
 body {
         background-image: linear-gradient(to right, #e0e7ff , #fef9c3);
 }
+
+@keyframes avion-move {
+        to {
+                transform: translate(300px, -100px);
+        }
+}
+
+.img-avion {
+        animation: avion-move 15s linear forwards infinite;
+}
+
+@keyframes nube-move {
+        to {
+                transform: translateX(-25px);
+        }
+}
+
+.img-nube {
+        animation: nube-move 22s linear forwards infinite;
+}
+
+@keyframes barco-move {
+        to {
+                transform: translateX(-300px);
+        }
+}
+
+.img-barco {
+        animation: barco-move 20s linear forwards infinite;
+}
