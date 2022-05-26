@@ -18,8 +18,8 @@ const FindCountry = () => {
         <img src={nube3} alt="Nube" className="img-nube absolute w-11 top-14 left-40"/>
         <img src={avion} alt="Avion" className="img-avion absolute top-8 -left-12 w-[45%]"/>
       </div>
-      <form className="flex justify-center items-center">
-        <input type="search" placeholder="Ingresa un país" className="rounded-lg py-2 shadow-sm shadow-black text-violet-500 text-center bg-rose-50 mr-2" id="search" name="search"/>
+      <form method="get" action="/verDestino/:destination" className="flex justify-center items-center">
+        <input type="text" placeholder="Ingresa un país" className="rounded-lg py-2 shadow-sm shadow-black text-violet-500 text-center bg-rose-50 mr-2" id="searchDestination" name="destination"/>
         <button type="submit" className="p-2 hover:-translate-y-1 hover:translate-x-1 hover:shadow-md hover:shadow-black font-medium text-white bg-gradient-to-r from-violet-700 to-rose-700 rounded-md border-1">Buscar</button>
       </form>
       <p className="text-violet-800 text-sm absolute bottom-8">Por favor tener en cuenta que la información aquí compartida es sólo de carácter indicativo y corresponde a testimonios y experiencias particulares de distintos usuarios.</p>
