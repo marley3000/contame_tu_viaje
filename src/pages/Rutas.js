@@ -6,6 +6,7 @@ import Navbar from "./Navbar"
 import UploadTravel from "./UploadTravel"
 
 
+
 const Rutas = () => {
   return (
     <>
