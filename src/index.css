@@ -4,6 +4,7 @@
 
 body {
         background-image: linear-gradient(to right, #e0e7ff , #fef9c3);
+        font-family: kanit;
 }
 
 @keyframes avion-move {
@@ -35,3 +36,4 @@ body {
 .img-barco {
         animation: barco-move 20s linear forwards infinite;
 }
+
