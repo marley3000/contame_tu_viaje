@@ -1,2 +1,3 @@
 Sitio web colaborativo, donde se pueden buscar experiencias y opiniones sobre distintos destinos turísticos. Al mismo tiempo, permite al usuario cargar y compartir su propia experiencia de viaje.
-Sitio creado con React, uso de Tailwind y React Router. Para el backend se utilizó MongoDB, Mongoose, Express.
+Sitio creado con React. Uso de Tailwind, Styled Components, Axios, React Router. Para el backend se utilizó MongoDB, Mongoose, Express.
+Además se sumó validación de formulario mediante expresiones regulares.
