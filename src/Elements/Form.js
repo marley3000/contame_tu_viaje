@@ -133,6 +133,7 @@ const MensajeExito = styled.p`
 
 const MensajeError = styled.div`
     height: 45px;
+    width: 100%;
     line-height: 45px;
     background: #f66060;
     padding: 0px 15px;
@@ -143,6 +144,15 @@ const MensajeError = styled.div`
     }
     b {
         margin-left: 10px;
+    }
+
+    @media (max-width: 536px) {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    @media (max-width: 325px) {
+        font-size: 12px;
     }
 `;
 
