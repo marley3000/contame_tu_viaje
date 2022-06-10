@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'kanit': ['Kanit', 'sans-serif'],
-        'macondo': ['Macondo', 'cursive']
+        'macondo': ['Macondo', 'cursive'],
+        'roboto': ['Roboto', 'sans-serif']
       }
     },
   },
