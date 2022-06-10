@@ -13,14 +13,14 @@ const FormUpload = ({handleSubmit}) => {
     const [valoration, setValoration] = useState({campo: '', valido: null}); 
     const [activities, setActivities] = useState({campo: '', valido: null}); 
     const [opinion, setOpinion] = useState({campo: '', valido: null}); 
-    const [formValido, setFormValido] = useState(null)
+    const [formValido, setFormValido] = useState(null);
 
     const expresiones = {
         name: /^[a-zA-ZÀ-ÿ]{3,20}$/,
-        destination: /^[a-zA-ZÀ-ÿ\s]{4,25}$/,
+        destination: /^[A-Z][a-zA-ZÀ-ÿ\s]{3,25}$/,
         number_travelers: /^\d{1,2}$/,
         duration_days: /^\d{1,3}$/,
-        valoration: /^\d{1}$/,
+        valoration: /^[1-5]{1}$/,
         activities: /^\w.{3,500}$/,
         opinion: /^\w.{3,500}$/
     }
@@ -81,7 +81,7 @@ const FormUpload = ({handleSubmit}) => {
                 label="País visitado"
                 placeholder="Escriba el país de destino"
                 name="destination"
-                leyendaError="El país debe contener entre 4 y 25 dígitos (solo letras y espacios)."
+                leyendaError="El país debe iniciar con mayúscula y contener entre 4 y 25 dígitos (solo letras y espacios)."
                 expresionRegular={expresiones.destination}
             />
             <div className="md:col-span-2 md:columns-3">
@@ -112,7 +112,7 @@ const FormUpload = ({handleSubmit}) => {
                     label="Valoración de la estadía"
                     placeholder="Indica el puntaje"
                     name="valoration"
-                    leyendaError="Solo puntaje del 0 (peor valoración) al 9 (mejor valoración)."
+                    leyendaError="Solo puntaje del 1 (peor valoración) al 5 (mejor valoración)."
                     expresionRegular={expresiones.valoration}
                 />
             </div>
