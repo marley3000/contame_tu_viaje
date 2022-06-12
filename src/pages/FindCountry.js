@@ -63,7 +63,7 @@ const FindCountry = () => {
               <div className="font-kanit">
                 {
                   travels.map(({_id, name, destination, number_travelers, duration_days, valoration, activities, opinion}) => 
-                    <div key={_id} className="mb-16 py-3 bg-gradient-to-r from-violet-700 to-rose-700 rounded-xl mx-4">
+                    <div key={_id} className="mb-16 p-3 bg-gradient-to-r from-violet-700 to-rose-700 rounded-xl mx-4">
                       <h2 className="text-3xl md:text-4xl">Bienvenidos viajeros!</h2>
                       <h3 className="text-2xl md:text-3xl">Soy {name}. A continuación verás información de mi viaje a {destination}: </h3>
                       <h5 className="text-base md:text-xl"><span>Cantidad de viajeros</span>: {number_travelers}</h5>
@@ -90,7 +90,7 @@ const Contenido = styled.div`
   flex-direction: column;
   align-items: center;
   z-index: 10;
-  color: #f4f6f7;
+  color: #E1F5FE;
   padding: 0 20px;
 
   h2 {
