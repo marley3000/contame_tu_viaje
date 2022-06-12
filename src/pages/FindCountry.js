@@ -4,6 +4,8 @@ import ConsultCountry from "../Components/ConsultCountry";
 import axios from 'axios';
 import Modal from '../Components/Modal';
 import styled from 'styled-components';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import { TailSpin } from 'react-loader-spinner';
 
 const baseUrl = process.env.REACT_APP_BASE_URL;
 
@@ -13,8 +15,12 @@ const FindCountry = () => {
   const [errorTravel, setErrorTravel] = useState(null);
   
   const [estadoModal, cambiarEstadoModal] = useState(false);
+
+  const [isLoading, setIsLoading] = useState(false);
   
   const handleSubmit = async (countryData) => {
+    
+    setIsLoading(true);
 
     try {
       const response = await axios({
@@ -23,9 +29,11 @@ const FindCountry = () => {
       })
 
       setTravels(response.data.viaje);
+      setIsLoading(false);
       
     } catch (error) {
       setErrorTravel(error);
+      setIsLoading(false);
     }
   }
   
@@ -45,7 +53,10 @@ const FindCountry = () => {
       >
         <Contenido>
           {
-            errorTravel != null && <h2 className="font-kanit text-3xl md:text-4xl pb-4 !text-rose-700">El destino no se encuentra en nuestra base de datos. Por favor prueba con uno diferente.</h2>
+            isLoading === true && <TailSpin color="#6d28d9"/>
+          }
+          {
+            errorTravel != null && <h2 className="font-kanit text-2xl md:text-3xl pb-4 !text-rose-700">El destino no se encuentra en nuestra base de datos. Por favor prueba con uno diferente.</h2>
           }
           {
             travels != null && 
