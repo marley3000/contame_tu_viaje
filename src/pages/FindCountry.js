@@ -45,21 +45,21 @@ const FindCountry = () => {
       >
         <Contenido>
           {
-            errorTravel != null && <h2 className="font-roboto">El destino no se encuentra en nuestra base de datos. Por favor prueba con uno diferente.</h2>
+            errorTravel != null && <h2 className="font-kanit text-3xl md:text-4xl pb-4 !text-rose-700">El destino no se encuentra en nuestra base de datos. Por favor prueba con uno diferente.</h2>
           }
           {
             travels != null && 
-              <div className="font-roboto">
+              <div className="font-kanit">
                 {
                   travels.map(({_id, name, destination, number_travelers, duration_days, valoration, activities, opinion}) => 
-                    <div key={_id} className="mb-16">
-                      <h2>Bienvenidos viajeros!</h2>
-                      <h3>Soy {name}. A continuación verás información de mi viaje a {destination}: </h3>
-                      <h5><b>Cantidad de viajeros</b>: {number_travelers}</h5>
-                      <h5><b>Duración de la estadía</b>: {duration_days} días</h5>
-                      <h5><b>Valoración del viaje (mejor puntaje: 5; peor puntaje: 1)</b>: {valoration}</h5>
-                      <p><b>Actividades que puedes realizar</b>: {activities}</p>
-                      <p><b>Mi opinión sobre el destino</b>: {opinion}</p>
+                    <div key={_id} className="mb-16 py-3 bg-gradient-to-r from-violet-700 to-rose-700 rounded-xl mx-4">
+                      <h2 className="text-3xl md:text-4xl">Bienvenidos viajeros!</h2>
+                      <h3 className="text-2xl md:text-3xl">Soy {name}. A continuación verás información de mi viaje a {destination}: </h3>
+                      <h5 className="text-base md:text-xl"><b>Cantidad de viajeros</b>: {number_travelers}</h5>
+                      <h5 className="text-base md:text-xl"><b>Duración de la estadía</b>: {duration_days} días</h5>
+                      <h5 className="text-base md:text-xl"><b>Valoración del viaje (mejor puntaje: 5; peor puntaje: 1)</b>: {valoration}</h5>
+                      <p className="text-base md:text-xl"><b>Actividades que puedes realizar</b>: {activities}</p>
+                      <p className="text-base md:text-xl"><b>Mi opinión sobre el destino</b>: {opinion}</p>
                     </div>
                   )
                 }
@@ -79,27 +79,17 @@ const Contenido = styled.div`
   flex-direction: column;
   align-items: center;
   z-index: 10;
-  color: #34495e;
+  color: #fff;
   padding: 0 20px;
 
   h2 {
-    font-size: 36px;
     font-weight: 700;
-    color: #8e24aa;
+    color: #00FF33;
   }
 
   h3 {
-    font-size: 28px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: #3949ab;
-  }
-
-  h5 {
-    font-size: 22px;
-  }
-
-  p {
-    font-size: 22px;
+    color: #e8f8f5;
   }
 `;
