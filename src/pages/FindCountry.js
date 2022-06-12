@@ -66,11 +66,11 @@ const FindCountry = () => {
                     <div key={_id} className="mb-16 py-3 bg-gradient-to-r from-violet-700 to-rose-700 rounded-xl mx-4">
                       <h2 className="text-3xl md:text-4xl">Bienvenidos viajeros!</h2>
                       <h3 className="text-2xl md:text-3xl">Soy {name}. A continuación verás información de mi viaje a {destination}: </h3>
-                      <h5 className="text-base md:text-xl"><b>Cantidad de viajeros</b>: {number_travelers}</h5>
-                      <h5 className="text-base md:text-xl"><b>Duración de la estadía</b>: {duration_days} días</h5>
-                      <h5 className="text-base md:text-xl"><b>Valoración del viaje (mejor puntaje: 5; peor puntaje: 1)</b>: {valoration}</h5>
-                      <p className="text-base md:text-xl"><b>Actividades que puedes realizar</b>: {activities}</p>
-                      <p className="text-base md:text-xl"><b>Mi opinión sobre el destino</b>: {opinion}</p>
+                      <h5 className="text-base md:text-xl"><span>Cantidad de viajeros</span>: {number_travelers}</h5>
+                      <h5 className="text-base md:text-xl"><span>Duración de la estadía</span>: {duration_days} días</h5>
+                      <h5 className="text-base md:text-xl"><span>Valoración del viaje (mejor puntaje: 5; peor puntaje: 1)</span>: {valoration}</h5>
+                      <p className="text-base md:text-xl"><span>Sitios para visitar y actividades que puedes realizar</span>: {activities}</p>
+                      <p className="text-base md:text-xl"><span>Mi opinión sobre el destino</span>: {opinion}</p>
                     </div>
                   )
                 }
@@ -90,17 +90,21 @@ const Contenido = styled.div`
   flex-direction: column;
   align-items: center;
   z-index: 10;
-  color: #fff;
+  color: #f4f6f7;
   padding: 0 20px;
 
   h2 {
     font-weight: 700;
-    color: #00FF33;
+    color: #00ff33;
   }
 
   h3 {
     font-weight: 700;
     margin-bottom: 10px;
-    color: #e8f8f5;
+
+  }
+
+  span {
+    color: #ffff33;
   }
 `;
