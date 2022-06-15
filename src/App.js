@@ -1,4 +1,4 @@
-import Rutas from './Pages/Rutas.js'
+import Rutas from './Pages/Rutas'
 
 
 function App() {
