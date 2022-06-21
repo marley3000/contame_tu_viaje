@@ -1,3 +1,4 @@
+import React from 'react';
 import barco from '../images/barco.png';
 import nube1 from '../images/nube1.png';
 import nube2 from '../images/nube2.png';
