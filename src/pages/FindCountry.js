@@ -4,8 +4,7 @@ import ConsultCountry from "../Components/ConsultCountry";
 import axios from 'axios';
 import Modal from '../Components/Modal';
 import styled from 'styled-components';
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import { TailSpin } from 'react-loader-spinner';
+import { PacmanLoader } from 'react-spinners';
 
 const baseUrl = process.env.REACT_APP_BASE_URL;
 
@@ -53,7 +52,7 @@ const FindCountry = () => {
       >
         <Contenido>
           {
-            isLoading === true && <TailSpin color="#6d28d9"/>
+            isLoading === true && <PacmanLoader color="#6d28d9"/>
           }
           {
             errorTravel != null && <h2 className="font-kanit text-2xl md:text-3xl pb-4 !text-rose-700">El destino no se encuentra en nuestra base de datos. Por favor prueba con uno diferente.</h2>
@@ -92,6 +91,7 @@ const Contenido = styled.div`
   z-index: 10;
   color: #E1F5FE;
   padding: 0 20px;
+  min-height: 60px;
 
   h2 {
     font-weight: 700;
